@@ -11,7 +11,7 @@ import javax.validation.constraints.*;
 
 @Getter
 @Setter
-@AllArgsConstructor
+//@AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "employee_details")
@@ -38,7 +38,6 @@ public class Employee {
     @Max(value = 150, message = "Age should not be greater than 150")
     @Column(name = "employee_age")
     private Integer empAge;
-
     @AssertTrue
     private boolean working;
 
